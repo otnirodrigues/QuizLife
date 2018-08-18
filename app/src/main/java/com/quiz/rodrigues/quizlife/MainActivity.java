@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (resposta1.getText() == nResposta){
                     nPontuacao++;
-                    pontuacao.setText("Pontuação" + nPontuacao);
+                    pontuacao.setText("Pontuação " + nPontuacao);
                     atualizarQuestoes(r.nextInt(nQuestoesLength));
 
                 }else gameOver();{
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (resposta2.getText() == nResposta){
                     nPontuacao++;
-                    pontuacao.setText("Pontuação" + nPontuacao);
+                    pontuacao.setText("Pontuação " + nPontuacao);
                     atualizarQuestoes(r.nextInt(nQuestoesLength));
 
                 }else gameOver();{
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (resposta3.getText() == nResposta){
                     nPontuacao++;
-                    pontuacao.setText("Pontuação" + nPontuacao);
+                    pontuacao.setText("Pontuação " + nPontuacao);
                     atualizarQuestoes(r.nextInt(nQuestoesLength));
 
                 }else gameOver();{
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (resposta4.getText() == nResposta){
                     nPontuacao++;
-                    pontuacao.setText("Pontuação" + nPontuacao);
+                    pontuacao.setText("Pontuação " + nPontuacao);
                     atualizarQuestoes(r.nextInt(nQuestoesLength));
 
                 }else gameOver();{
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void gameOver(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
-        alertDialogBuilder.setMessage("Você perdeu o Jogo! Sua pontuação foi: " + nPontuacao + " Pontos!");
+        alertDialogBuilder.setMessage("Resposta Incorreta! Sua pontuação final é: " + nPontuacao + " Pontos!");
         alertDialogBuilder.setCancelable(false);
         alertDialogBuilder.setPositiveButton("Novo jogo",
                 new DialogInterface.OnClickListener() {
