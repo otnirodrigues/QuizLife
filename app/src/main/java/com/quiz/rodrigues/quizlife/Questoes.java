@@ -5,31 +5,33 @@ public class Questoes {
 
     public String nQuestoes[] = {
 
-            "Qual das alternativas é um componente de entrada e saida o computador?",
-            "Qual das alternativas é um componente de entrada e saida o computador?",
-            "Qual das alternativas é um componente de entrada e saida o computador?",
-            "Qual das alternativas é um componente de entrada e saida o computador?",
-            "Qual das alternativas é um componente de entrada e saida o computador?",
-            "Qual das alternativas é um componente de entrada e saida o computador?"
+            "Qual das alternativas é um componente de entrada e saida do computador?",
+            "Qual das alternativas é um componente de entrada e saida do computador?",
+            "Qual das alternativas é um componente de entrada e saida do computador?",
+            "Qual das alternativas é um componente de entrada e saida do computador?",
+            "Qual das alternativas é um componente de entrada e saida do computador?",
+            "Qual das alternativas é um componente de entrada e saida do computador?"
     };
 
     private String nEscolhas[][] = {
 
-            {"Gabinete , CPU, Monitor, Teclado"},
-            {"Gabinete , CPU, Monitor, Teclado"},
-            {"Gabinete , CPU, Monitor, Teclado"},
-            {"Gabinete , CPU, Monitor, Teclado"},
-            {"Gabinete , CPU, Monitor, Teclado"},
-            {"Gabinete , CPU, Monitor, Teclado"}
+            {"Gabinete","CPU","Monitor","Teclado"},
+            {"Teclado","Gabinete","Monitor","CPU"},
+            {"Gabinete","CPU","Monitor","Teclado"},
+            {"CPU","Gabinete","Monitor","Teclado"},
+            {"CPU","Monitor","Gabinete","Teclado"},
+            {"Gabinete","CPU","Teclado","Monitor"}
+
 
     };
 
-    private String nRespostaCorreta[] = {"Monitor"};
+    private String nRespostaCorreta[] = {"Monitor","Monitor","Monitor","Monitor","Monitor","Monitor"};
 
 
-    public String getQuestoes(int a) {
-        String questoes = nQuestoes[a];
-        return questoes;
+
+    public String getQuestao(int a) {
+        String questao = nQuestoes[a];
+        return questao;
     }
 
     public String getEscolha1(int a) {

@@ -5,28 +5,27 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import java.util.Random;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     Button resposta1 , resposta2, resposta3, resposta4;
 
-    TextView questao, score;
+    TextView questao, pontuacao;
 
     private Questoes nQuestoes = new Questoes();
 
-    private String nRespostaCorreta;
+    private String nResposta;
 
-    private int nScore = 0;
+    private int nPontuacao = 0;
 
-    private int QuestoesLenght = nQuestoes.nQuestoes.length;
+    private int nQuestoesLength = nQuestoes.nQuestoes.length;
 
     Random r;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,19 +41,19 @@ public class MainActivity extends Activity {
 
         questao = findViewById(R.id.questao);
         // Pontuação
-        score = findViewById(R.id.pontuacao);
+        pontuacao = findViewById(R.id.pontuacao);
 
-        score.setText("Pontuação" + nScore);
+        pontuacao.setText("Pontuação " + nPontuacao);
 
-        atualizarQuestoes(r.nextInt(QuestoesLenght));
+        atualizarQuestoes(r.nextInt(nQuestoesLength));
 
         resposta1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (resposta1.getText() == nRespostaCorreta){
-                    nScore++;
-                    score.setText("Pontuação" + nScore);
-                    atualizarQuestoes(r.nextInt(QuestoesLenght));
+                if (resposta1.getText() == nResposta){
+                    nPontuacao++;
+                    pontuacao.setText("Pontuação" + nPontuacao);
+                    atualizarQuestoes(r.nextInt(nQuestoesLength));
 
                 }else gameOver();{
 
@@ -66,10 +65,10 @@ public class MainActivity extends Activity {
         resposta2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (resposta2.getText() == nRespostaCorreta){
-                    nScore++;
-                    score.setText("Pontuação" + nScore);
-                    atualizarQuestoes(r.nextInt(QuestoesLenght));
+                if (resposta2.getText() == nResposta){
+                    nPontuacao++;
+                    pontuacao.setText("Pontuação" + nPontuacao);
+                    atualizarQuestoes(r.nextInt(nQuestoesLength));
 
                 }else gameOver();{
 
@@ -80,10 +79,10 @@ public class MainActivity extends Activity {
         resposta3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (resposta3.getText() == nRespostaCorreta){
-                    nScore++;
-                    score.setText("Pontuação" + nScore);
-                    atualizarQuestoes(r.nextInt(QuestoesLenght));
+                if (resposta3.getText() == nResposta){
+                    nPontuacao++;
+                    pontuacao.setText("Pontuação" + nPontuacao);
+                    atualizarQuestoes(r.nextInt(nQuestoesLength));
 
                 }else gameOver();{
 
@@ -94,10 +93,10 @@ public class MainActivity extends Activity {
         resposta4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (resposta4.getText() == nRespostaCorreta){
-                    nScore++;
-                    score.setText("Pontuação" + nScore);
-                    atualizarQuestoes(r.nextInt(QuestoesLenght));
+                if (resposta4.getText() == nResposta){
+                    nPontuacao++;
+                    pontuacao.setText("Pontuação" + nPontuacao);
+                    atualizarQuestoes(r.nextInt(nQuestoesLength));
 
                 }else gameOver();{
 
@@ -107,18 +106,19 @@ public class MainActivity extends Activity {
     }
 
     private void atualizarQuestoes(int num){
-        questao.setText(nQuestoes.getQuestoes(num));
+        questao.setText(nQuestoes.getQuestao(num));
         resposta1.setText(nQuestoes.getEscolha1(num));
         resposta2.setText(nQuestoes.getEscolha2(num));
         resposta3.setText(nQuestoes.getEscolha3(num));
         resposta4.setText(nQuestoes.getEscolha4(num));
 
-        nRespostaCorreta = nQuestoes.getRespostaCorreta(num);
+        nResposta = nQuestoes.getRespostaCorreta(num);
+
     }
 
     private void gameOver(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
-        alertDialogBuilder.setMessage("Você perdeu o Jogo! Sua pontuação foi:" + nScore + "Pontos!");
+        alertDialogBuilder.setMessage("Você perdeu o Jogo! Sua pontuação foi: " + nPontuacao + " Pontos!");
         alertDialogBuilder.setCancelable(false);
         alertDialogBuilder.setPositiveButton("Novo jogo",
                 new DialogInterface.OnClickListener() {

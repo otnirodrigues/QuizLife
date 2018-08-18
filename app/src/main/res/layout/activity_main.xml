@@ -10,7 +10,7 @@
         android:id="@+id/resposta4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         android:layout_marginTop="1dp"
         android:text="Button4"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,6 +26,7 @@
         android:text="Button3"
         app:layout_constraintBottom_toTopOf="@+id/resposta4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resposta2" />
 
@@ -37,6 +38,7 @@
         android:text="Button2"
         app:layout_constraintBottom_toTopOf="@+id/questao"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resposta1" />
 
@@ -55,17 +57,21 @@
         android:id="@+id/questao"
         android:layout_width="match_parent"
         android:layout_height="310dp"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
         android:text="TextView"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintBottom_toTopOf="@+id/resposta1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/pontuacao"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="43dp"
         android:gravity="center"
         android:text="TextView"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/questao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
 </android.support.constraint.ConstraintLayout>
