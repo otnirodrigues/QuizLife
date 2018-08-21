@@ -60,8 +60,8 @@
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="backgroundColor" value="050505" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Área de Trabalho/download.png" />
-                                      <entry key="outputName" value="life" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Área de Trabalho/resposta-certa.png" />
+                                      <entry key="outputName" value="resposta_correta" />
                                     </map>
                                   </option>
                                 </PersistentState>

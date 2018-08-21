@@ -1,6 +1,5 @@
 package com.quiz.rodrigues.quizlife;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -124,6 +123,9 @@ public class MainActivity extends AppCompatActivity {
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        /*Quando o usuario deseja iniciar um novo jogo
+                        finaliza a activity antes de iniciar uma nova*/
+                        finish();
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     }
                 });
