@@ -1,5 +1,6 @@
 package com.quiz.rodrigues.quizlife;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -50,9 +51,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (resposta1.getText() == nResposta){
+                    //new SplashAcertou();
                     nPontuacao++;
                     pontuacao.setText("Pontuação " + nPontuacao);
                     atualizarQuestoes(r.nextInt(nQuestoesLength));
+
 
                 }else gameOver();{
 
@@ -68,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                     nPontuacao++;
                     pontuacao.setText("Pontuação " + nPontuacao);
                     atualizarQuestoes(r.nextInt(nQuestoesLength));
+                    //startActivity(i);
+
 
                 }else gameOver();{
 
@@ -82,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     nPontuacao++;
                     pontuacao.setText("Pontuação " + nPontuacao);
                     atualizarQuestoes(r.nextInt(nQuestoesLength));
+                    //new SplashAcertou();
 
                 }else gameOver();{
 
@@ -93,9 +99,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (resposta4.getText() == nResposta){
+                   // new SplashAcertou();
                     nPontuacao++;
                     pontuacao.setText("Pontuação " + nPontuacao);
                     atualizarQuestoes(r.nextInt(nQuestoesLength));
+
 
                 }else gameOver();{
 
@@ -119,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
         alertDialogBuilder.setMessage("Resposta Incorreta! Sua pontuação final é: " + nPontuacao + " Pontos!");
         alertDialogBuilder.setCancelable(false);
-        alertDialogBuilder.setPositiveButton("Novo jogo",
+        alertDialogBuilder.setPositiveButton("Nova Partida",
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
