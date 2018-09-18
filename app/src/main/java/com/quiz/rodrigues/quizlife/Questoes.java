@@ -5,27 +5,20 @@ public class Questoes {
 
     public String nQuestoes[] = {
 
-            "Qual das alternativas é um componente de entrada e saida do computador?",
-            "Qual das alternativas é um componente de entrada e saida do computador?",
-            "Qual das alternativas é um componente de entrada e saida do computador?",
-            "Qual das alternativas é um componente de entrada e saida do computador?",
-            "Qual das alternativas é um componente de entrada e saida do computador?",
-            "Qual das alternativas é um componente de entrada e saida do computador?"
+            "Ao redigir uma ata de reunião realizada na empresa em que trabalha , um secretário executivo precisou   traduzir para o inglês o trecho “todas as  informações necessárias para realização de determinada ação”  e a palavra “orçamento”\n" +
+                    "\n" +
+                    "Esse trecho sublinhado e a palavra “orçamento” pode ser adequado  e respectivamente traduzido  por:\n",
+
     };
 
     private String nEscolhas[][] = {
 
-            {"Gabinete","CPU","Monitor","Teclado"},
-            {"Teclado","Gabinete","Monitor","CPU"},
-            {"Gabinete","CPU","Monitor","Teclado"},
-            {"CPU","Gabinete","Monitor","Teclado"},
-            {"CPU","Monitor","Gabinete","Teclado"},
-            {"Gabinete","CPU","Teclado","Monitor"}
+            {"budget e order","scope e receipt","briefing e budget","briefing e broad band","benchmark e business plan"},
 
 
     };
 
-    private String nRespostaCorreta[] = {"Monitor","Monitor","Monitor","Monitor","Monitor","Monitor"};
+    private String nRespostaCorreta[] = {"briefing e budget"};
 
 
 

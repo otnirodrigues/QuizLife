@@ -45,7 +45,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Área de Trabalho/download.png" />
+                                      <entry key="imageAsset" value="C:\Users\Otni\Área de Trabalho\download.png" />
                                       <entry key="outputName" value="life" />
                                     </map>
                                   </option>
@@ -60,18 +60,13 @@
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="backgroundColor" value="050505" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Área de Trabalho/resposta-certa.png" />
-                                      <entry key="outputName" value="resposta_correta" />
+                                      <entry key="imageAsset" value="C:\Users\Otni\Downloads\Chiara.png" />
+                                      <entry key="outputName" value="logo" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>

@@ -56,22 +56,25 @@
     <TextView
         android:id="@+id/questao"
         android:layout_width="match_parent"
-        android:layout_height="310dp"
-        android:layout_marginBottom="16dp"
+        android:layout_height="251dp"
         android:gravity="center"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/resposta1"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="64dp" />
 
     <TextView
         android:id="@+id/pontuacao"
         android:layout_width="match_parent"
-        android:layout_height="43dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="26dp"
         android:gravity="center"
         android:text="TextView"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/questao"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp" />
 </android.support.constraint.ConstraintLayout>
