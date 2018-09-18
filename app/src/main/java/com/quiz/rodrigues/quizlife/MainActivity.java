@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     }
                 });
-        alertDialogBuilder.setNegativeButton("Finalizar Jogo",
+        alertDialogBuilder.setNegativeButton("Finalizar Partida",
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
