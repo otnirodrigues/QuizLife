@@ -8,17 +8,20 @@ public class Questoes {
             "Ao redigir uma ata de reunião realizada na empresa em que trabalha , um secretário executivo precisou   traduzir para o inglês o trecho “todas as  informações necessárias para realização de determinada ação”  e a palavra “orçamento”\n" +
                     "\n" +
                     "Esse trecho sublinhado e a palavra “orçamento” pode ser adequado  e respectivamente traduzido  por:\n",
+            "A função gerencial  faz  parte da rotina  secretarial ,ainda que na hierarquia os secretários assumam a função de assessoria.\n" +
+                    "Assinale a opção correta que exemplifica, prioritariamente, a atribuição da função de assessoramento.\n"
 
     };
 
     private String nEscolhas[][] = {
 
             {"budget e order","scope e receipt","briefing e budget","briefing e broad band","benchmark e business plan"},
+            {"Utilizar técnicas  secretariais,sendo  essas  os   aspectos mais importantes","Planejar  ,organizar  e controlar  a infraestrutura secretarial em diversos níveis gerenciais","Desenvolver ações comando como atividade sem fim","Operacionalizar arquivos, agenda, follow-up, reuniões e eventos","Implantar processos gerenciais inovadores na organização"}
 
 
     };
 
-    private String nRespostaCorreta[] = {"briefing e budget"};
+    private String nRespostaCorreta[] = {"briefing e budget","Planejar  ,organizar  e controlar  a infraestrutura secretarial em diversos níveis gerenciais"};
 
 
 
